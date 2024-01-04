@@ -1,5 +1,5 @@
 # SC627-Motion Planning & Coordination of Autonomous Vehicles
-
+This is the official GitHub repository for the SC 627 Course Spring semester-2024 and All the content and assignments related to tutorials will be added here. Frequently check the readme for updates.
 ## Pre-requisites
 In the Tutorial sections, we will cover the working of ROS1, and ROS2, simulations with Gazebo, and related hardware experiments. We will be using both Python and C++ as programming languages. If you are not familiar with programming it will be difficult to get through, doing a basic course on Python and C++ might help. Check out this fast track courses for [Python](https://www.interviewbit.com/courses_v2/fast-track-python) and [C++](https://www.interviewbit.com/courses_v2/fast-track-cpp)
 ### Install Ubuntu 20.04
