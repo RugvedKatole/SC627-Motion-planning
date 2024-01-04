@@ -1,7 +1,7 @@
 # SC627-Motion Planning & Coordination of Autonomous Vehicles
 
 ## Pre-requisites
-
+In the Tutorial sections, we will cover the working of ROS1, and ROS2, simulations with Gazebo, and related hardware experiments. We will be using both Python and C++ as programming languages. If you are not familiar with programming it will be difficult to get through, doing a basic course on Python and C++ might help. Check out this fast track courses for [Python](https://www.interviewbit.com/courses_v2/fast-track-python) and [C++](https://www.interviewbit.com/courses_v2/fast-track-cpp)
 ### Install Ubuntu 20.04
 Throughout the course, we will be working on Ubuntu Linux 20.04 LTS. If you are not running Ubuntu already, I would recommend installing it before the class. 
 
@@ -18,3 +18,6 @@ Throughout the course, we will be working on Ubuntu Linux 20.04 LTS. If you are 
     -  Install the full-desktop version
     -  Add the environment setup to your .bashrc
     -  Install the dependencies for building packages
+2. [Install ROS2 Foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+    -  Same instructions apply
+   
