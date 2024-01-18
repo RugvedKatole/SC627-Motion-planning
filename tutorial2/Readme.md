@@ -92,7 +92,7 @@ checking if ros can see our services and messages
 
 Create a file name `add_two_ints_server.cpp` inside [package]/src folder
 
-`$ roscd tutorial2 && touch src/add_two_ints_server.cpp`
+`$ cd tutorial2 && touch src/add_two_ints_server.cpp`
 
 Copy and paste the contents of src/add_two_ints_server.cpp into the file.
 
