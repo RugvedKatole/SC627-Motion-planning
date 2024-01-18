@@ -13,7 +13,7 @@ Make a new Directory msg.
 
 `$ mkdir msg`
 
-`$ echo "int64 num > msg/Num.msg"`
+`$ echo "int64 num" > msg/Num.msg`
 
 Similarly, Creating a custom service with input as two integers and return the sum.
 the custom service looks like this
