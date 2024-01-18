@@ -33,7 +33,7 @@ $ cd srv
 $ touch AddTwoInts.srv
 ```
 
-Copy and Paste the contents of [AddTwoInts](tutorial2/srv/AddTwoInts.srv) from the srv folder.
+Copy and Paste the contents of [AddTwoInts](srv/AddTwoInts.srv) from the srv folder.
 
 Editing Package.xml and adding dependencies.
 
