@@ -27,8 +27,7 @@ class Obstacles:
         self.obs[bot_id].pose_y = data.pose.pose.position.y
         orient = data.pose.pose.orientation
         (roll, pitch, yaw) = euler_from_quaternion([orient.x, orient.y, orient.z, orient.w])
-        if yaw < 0:
-            yaw += 2 * math.pi
+        yaw = math.atan2(math.sin(yaw),math.cos(yaw)) # normalizing to get yaw in -pi to pi
         # self.obs[bot_id].pose.theta = yaw
 
         lin_vel = data.twist.twist.linear.x
