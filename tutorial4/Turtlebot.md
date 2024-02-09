@@ -1,24 +1,76 @@
-# TurtleBot3 Burger Hardware Setup
+# TurtleBot3 Burger Experimental Setup
 
 [Setup Link](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/)
 
+## Remote PC Setup: Your Host Ubuntu Computer/Laptop/PC
 
-Set ROSMASTER and ROS HOSTNAME on Laptops/PC
-By pasting following command in ~/.bashrc
+### Step 1: Obtaining IP address
+1. Connect to the ARMS_LAB_GUEST Wifi Network
+2. Find out the IP address using `ifconfig`
 
-`export ROS_MASTER_URI=http://192.168.0.7:11311/`
+![s](image.png)
+
+![alt text](image-1.png)
+
+The highlighted text is the IP of your System
+
+### Step 2: Setting Environment Variables
+
+Add ROS_MASTER_URI to the .bashrc file on your system.
+
+`$ echo 'export ROS_MASTER_URI=http://{Replace with the IP obtained from ifconfig}:11311/' >> ~/.bashrc`
 
 
-`export ROS_HOSTNAME=192.168.0.7`
+Add ROSHOSTNAME to the .bashrc file on your system.
 
-change 192.168.0.7 to your IP, using if config
+`$ echo 'export ROS_HOSTNAME={Replace with the IP obtained from ifconfig}' >> ~/.bashrc`
 
 
-Connecting to the Robot
+Source the .bashrc file
 
-`ssh ubuntu@<IP of the Robot>`
+`$ Source ~/.bashrc`
+
+## TurtleBot Configuration
+
+### Step 1: Connect to turtlebot using SSH
+
+Read the IP written the turtlebot and use following command.
+
+`$ ssh ubuntu@<IP of the Robot>`
+
 Password: turtlebot
 
-Run Bringup launch
+### Step 2: Changing the ROS_MASTER_URI on Turtlebot
 
-`roslaunch turtlebot3_bringup turtlebot3_robot.launch`
+Execute the following command in the turtlebot terminal.
+
+`$ export ROS_MASTER_URI=http://{Replace with the IP obtained from ifconfig}`
+
+**DO NOT CHANGE ANY OTHER ENVIRONMENT VARIABLES ON TURTLEBOT**
+
+
+## Experimental Setup
+
+### Step 1: Running roscore on your computer/laptop/PC:
+
+Open a new terminal and run roscore
+
+`$ roscore`
+
+### Step 2: Running Bringup Launch on turtlebot
+
+Open a new terminal and connect to turtlebot using ssh and execute
+
+`$ roslaunch turtlebot3_bringup turtlebot3_robot.launch`
+
+### Step 3: Sanity Check
+
+Once callibration is complete, Open new terminal and run
+
+`rostopic list`
+
+If you are able to see a lot rostopics consisting of /odom, /scan, /cmd_vel it sucessfull
+
+If not Please contact a TA
+
+Now you can port your gazebo simulation onto turtlebot hardware by just mapping the required topics!!
