@@ -1,0 +1,9 @@
+#goal
+geometry_msgs/Pose2D pose_dest
+string bot_id
+---
+#result
+geometry_msgs/Pose2D pose_final
+---
+#feedback
+geometry_msgs/Pose2D pose_mid
