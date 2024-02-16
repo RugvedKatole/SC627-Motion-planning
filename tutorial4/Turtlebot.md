@@ -28,7 +28,7 @@ Add ROSHOSTNAME to the .bashrc file on your system.
 
 Source the .bashrc file
 
-`$ Source ~/.bashrc`
+`$ source ~/.bashrc`
 
 ## TurtleBot Configuration
 
