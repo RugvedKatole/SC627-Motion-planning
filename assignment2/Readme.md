@@ -48,8 +48,7 @@ Provide a heatmap of your potential function and how it replans the trajectory i
 
 ## Grading 
 Your grade will depend on:
-1. The correctness of your implementations (optimizing data structures e.g. using k-d trees for
-nearest neighbor search is NOT required).
+1. The correctness of your implementations
 2. Finding solutions within a fixed reasonable budget of time.
 3. Simulation Results
 4. Experimental Results
